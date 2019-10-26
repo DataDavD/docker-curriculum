@@ -20,6 +20,7 @@ images = [
 
 @app.route('/')
 def index():
+    '''add in dockstring to test issues with git pushing'''
     url = random.choice(images)
     return render_template('index.html', url=url)
 
